@@ -373,14 +373,13 @@ Sensitive image submissions should be handled in accordance with applicable priv
 
 ## Future Improvements
 
-1. **Presigned URL region handling:** Correct and verify the S3 presigned download URL configuration so review links use the bucket's correct AWS Region (`eu-west-2`). A region mismatch was observed during testing.
-2. **Automated test coverage:** Expand unit and integration tests for all five image formats, mixed moderation outcomes and failure conditions.
-3. **Moderation dashboard:** Introduce a web-based interface for reviewing flagged submissions and recording decisions.
-4. **Idempotent processing:** Implement a mechanism to track processed email events and avoid duplicate notifications.
-5. **Improved notifications:** Add structured moderation reports and clearer review information.
-6. **Monitoring and alerting:** Extend CloudWatch monitoring with actionable alerts for processing and delivery failures.
-7. **Image and email security:** Strengthen attachment validation, malware screening and access controls.
-8. **Operational documentation:** Add deployment troubleshooting, recovery procedures and cost-monitoring guidance.
+1. **Automated test coverage:** Expand unit and integration tests for all five image formats, mixed moderation outcomes and failure conditions.
+2. **Moderation dashboard:** Introduce a web-based interface for reviewing flagged submissions and recording decisions.
+3. **Idempotent processing:** Implement a mechanism to track processed email events and avoid duplicate notifications.
+4. **Improved notifications:** Add structured moderation reports and clearer review information.
+5. **Monitoring and alerting:** Extend CloudWatch monitoring with actionable alerts for processing and delivery failures.
+6. **Image and email security:** Strengthen attachment validation, malware screening and access controls.
+7. **Operational documentation:** Add deployment troubleshooting, recovery procedures and cost-monitoring guidance.
 
 ## Cost Considerations
 
