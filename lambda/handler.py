@@ -23,7 +23,12 @@ from PIL import Image, ImageOps, UnidentifiedImageError
 log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)
 CONFIG = Config(retries={"max_attempts": 2, "mode": "standard"}, read_timeout=20)
-s3 = boto3.client("s3", config=Config(signature_version="s3v4"))
+s3 = boto3.client(
+    "s3",
+    region_name="eu-west-2",
+    endpoint_url="https://s3.eu-west-2.amazonaws.com",
+    config=Config(signature_version="s3v4")
+)
 rekognition = boto3.client("rekognition", config=CONFIG)
 ses = boto3.client("sesv2", config=CONFIG)
 
