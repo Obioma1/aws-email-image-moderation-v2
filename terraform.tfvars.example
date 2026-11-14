@@ -1,0 +1,27 @@
+# ============================================================
+# Project: AWS Email Image Moderation V2
+# Author: Obioma Iwuji
+# Description: AWS Serverless Email Image Classification,
+#              Moderation and Automated Approval/Flagging
+# AWS Region: eu-west-2 (London)
+# Infrastructure as Code: Terraform
+# Example Terraform Configuration
+# ============================================================
+
+project_name = "email-moderation-v2"
+
+# Dedicated SES subdomain for incoming emails.
+intake_domain = "inbox.example.com"
+
+# Separate destination mailboxes for moderation results.
+approved_email = "approved@example.com"
+flagged_email  = "flagged@example.com"
+
+# Minimum confidence percentage for selected moderation labels.
+moderation_threshold = 80
+
+# Presigned S3 review link lifetime in seconds.
+link_expiry_seconds = 3600
+
+# Keep disabled until SES domain and DNS verification are complete.
+enable_receiving = false

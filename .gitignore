@@ -1,0 +1,48 @@
+
+# AWS Email Image Moderation V2
+# Git exclusions
+
+# Terraform local working directory
+.terraform/
+
+# Terraform state and backups
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Local Terraform configuration
+terraform.tfvars
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Terraform plan files
+*.tfplan
+tfplan
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Generated Lambda deployment packages
+lambda.zip
+*.zip
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated Lambda build files
+build/
