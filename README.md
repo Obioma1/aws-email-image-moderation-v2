@@ -169,11 +169,10 @@ The implementation uses `eu-west-2`.
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
-cd email-moderation-v2
+git clone https://github.com/Obioma1/aws-email-image-moderation-v2.git
+cd aws-email-image-moderation-v2
 ```
 
-Replace the placeholder with your published GitHub repository URL.
 
 ### 2. Configure AWS Credentials
 
